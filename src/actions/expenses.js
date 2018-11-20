@@ -22,7 +22,7 @@ export const startAddExpense = (expenseData = {}) => {
       createdAt
     }
 
-    dataBase.ref('expenses').push(expense).then((ref) => {
+    return dataBase.ref('expenses').push(expense).then((ref) => {
       dispatch(addExpense({
         id: ref.key,
         ...expense
