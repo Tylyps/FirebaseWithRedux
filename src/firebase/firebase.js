@@ -61,14 +61,14 @@ export { firebase, database as default };
 //     console.log(expenses);
 //   });
 
-// database.ref('notes').push({
+// database.ref('note').push({
 //   title: 'Course Topics',
 //   body: 'React native, angular, python'
 // });
 
 
-// const firebaseNotes = {
-//   notes: {
+// const firebasenote = {
+//   note: {
 //     apoijasd: {
 //       id: '12',
 //       title: 'First note!'
@@ -80,7 +80,7 @@ export { firebase, database as default };
 //   }
 // }
 
-// const notes = [{
+// const note = [{
 //   id: '12',
 //   title: 'First note!'
 // },{
@@ -88,7 +88,7 @@ export { firebase, database as default };
 //   title: '45 note!'
 // }];
 
-// database.ref().set(firebaseNotes);
+// database.ref().set(firebasenote);
 
 // database.ref().set({
 //   name: 'Jakub Chmielewski',
