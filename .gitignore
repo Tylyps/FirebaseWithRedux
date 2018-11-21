@@ -4,6 +4,7 @@
 /node_modules
 
 npm-debug.log*
-
+.env.test
+.env.development
 
 public/dist/
