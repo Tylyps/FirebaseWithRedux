@@ -49,3 +49,18 @@ export const setExpenses = (expenses) => ({
 });
 
 // export const startSetExpenses;
+
+export const startSetExpenses = () => {
+  return (dispatch) => {
+    return dataBase.ref('expenses').once('value').then((snapschot) => {
+      const expenses = [];
+      snapschot.forEach((childSnapshot) => {
+        expenses.push({
+          id: childSnapshot.key,
+          ...childSnapshot.val()
+        });
+      })
+      dispatch(setExpenses(expenses))
+    });
+  };
+};
